@@ -1,0 +1,14 @@
+C:\Users\admin\source\repos\BTVN1\BTVN1\bin\Debug\net8.0\BTVN1.exe
+C:\Users\admin\source\repos\BTVN1\BTVN1\bin\Debug\net8.0\BTVN1.deps.json
+C:\Users\admin\source\repos\BTVN1\BTVN1\bin\Debug\net8.0\BTVN1.runtimeconfig.json
+C:\Users\admin\source\repos\BTVN1\BTVN1\bin\Debug\net8.0\BTVN1.dll
+C:\Users\admin\source\repos\BTVN1\BTVN1\bin\Debug\net8.0\BTVN1.pdb
+C:\Users\admin\source\repos\BTVN1\BTVN1\obj\Debug\net8.0\BTVN1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\BTVN1\BTVN1\obj\Debug\net8.0\BTVN1.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\BTVN1\BTVN1\obj\Debug\net8.0\BTVN1.AssemblyInfo.cs
+C:\Users\admin\source\repos\BTVN1\BTVN1\obj\Debug\net8.0\BTVN1.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\BTVN1\BTVN1\obj\Debug\net8.0\BTVN1.dll
+C:\Users\admin\source\repos\BTVN1\BTVN1\obj\Debug\net8.0\refint\BTVN1.dll
+C:\Users\admin\source\repos\BTVN1\BTVN1\obj\Debug\net8.0\BTVN1.pdb
+C:\Users\admin\source\repos\BTVN1\BTVN1\obj\Debug\net8.0\BTVN1.genruntimeconfig.cache
+C:\Users\admin\source\repos\BTVN1\BTVN1\obj\Debug\net8.0\ref\BTVN1.dll
