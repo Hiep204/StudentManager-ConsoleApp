@@ -1,0 +1,17 @@
+﻿@model Ass2.Models.Student
+
+    <h2>Create Student</h2>
+    <form  method="post" asp-action="Create">
+    <div>
+        <label asp-for="FullName"></label>
+        <input asp-for="FullName" />
+    </div>
+    <div>
+        <label asp-for="Dob"></label>
+        <input asp-for="Dob" type="date" />
+    </div>
+
+    <button type="submit">Save</button>
+    <a asp-action="List">Back</a>
+    </form>
+    

@@ -1,0 +1,20 @@
+﻿@model Ass2.Models.Student
+
+<h2>Edit Student</h2>
+
+<form asp-action="Edit" method="post">
+    <input asp-for="Id" type="hidden" />
+
+    <div>
+        <label asp-for="FullName"></label>
+        <input asp-for="FullName" />
+    </div>
+
+    <div>
+        <label asp-for="Dob"></label>
+        <input asp-for="Dob" type="date" />
+    </div>
+
+    <button type="submit">Update</button>
+    <a asp-action="List">Back</a>
+</form>
