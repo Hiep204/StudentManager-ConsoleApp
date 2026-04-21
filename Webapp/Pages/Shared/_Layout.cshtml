@@ -1,0 +1,18 @@
+﻿@using Microsoft.AspNetCore.Http
+@using Webapp.Pages.Helpers.Webapp.Helpers
+
+@{
+    var userId = SessionHelper.GetUserId(Context);
+    var role = Context.Session.GetString("RoleName");
+}
+
+<li class="nav-item">
+    <a class="nav-link" asp-page="@(userId == null ? "/Login" : "/Cart")">Cart 🛒</a>
+</li>
+
+@if (userId != null && role == "Customer")
+{
+    <li class="nav-item">
+        <a class="nav-link" asp-page="/Orders/History">Order History</a>
+    </li>
+}

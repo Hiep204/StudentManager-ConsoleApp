@@ -1,0 +1,147 @@
+﻿@page "{id:int}"
+@model Webapp.Pages.ManageOrderDetailModel
+
+@{
+    ViewData["Title"] = "Order Detail";
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container mt-5">
+
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2 class="fw-bold">📦 Order Detail</h2>
+        <a asp-page="ManageOrder" class="btn btn-outline-secondary">← Back</a>
+    </div>
+
+    @if (!string.IsNullOrEmpty(Model.Message))
+    {
+        <div class="alert alert-success">@Model.Message</div>
+    }
+
+    @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+    {
+        <div class="alert alert-danger">@Model.ErrorMessage</div>
+    }
+
+    @if (Model.Order != null)
+    {
+        <!-- ORDER INFO -->
+        <div class="card shadow border-0 mb-4">
+            <div class="card-body">
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <p><strong>Order ID:</strong> @Model.Order.OrderId</p>
+                        <p><strong>Customer:</strong> @Model.Order.CustomerName</p>
+                        <p><strong>Receiver:</strong> @Model.Order.ReceiverName</p>
+                        <p><strong>Phone:</strong> @Model.Order.ReceiverPhone</p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <p><strong>Address:</strong> @Model.Order.ShippingAddress</p>
+
+                        <p>
+                            <strong>Status:</strong>
+                            <span class="badge bg-info">@Model.Order.Status</span>
+                        </p>
+
+                        <p>
+                            <strong>Payment:</strong>
+                            <span class="badge bg-secondary">@Model.Order.PaymentMethod</span>
+                            <small class="text-muted">(@Model.Order.PaymentStatus)</small>
+                        </p>
+
+                        <p class="fw-bold text-success fs-5">
+                            Total: @Model.Order.TotalAmount.ToString("N0") ₫
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- UPDATE STATUS -->
+        <div class="card shadow border-0 mb-4">
+            <div class="card-body">
+                <h5 class="mb-3">⚙ Update Status</h5>
+
+                <form method="post" asp-page-handler="UpdateStatus">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label class="form-label">New Status</label>
+                            <select asp-for="NewStatus" class="form-select">
+                                <option value="Pending">Pending</option>
+                                <option value="Confirmed">Confirmed</option>
+                                <option value="Shipping">Shipping</option>
+                                <option value="Completed">Completed</option>
+                                <option value="Cancelled">Cancelled</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">Note</label>
+                            <textarea asp-for="Note" class="form-control" placeholder="Optional note..."></textarea>
+                        </div>
+
+                        <div class="col-md-2 d-flex align-items-end">
+                            <button type="submit" class="btn btn-primary w-100">
+                                Update
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- ORDER ITEMS -->
+        <div class="card shadow border-0">
+            <div class="card-body">
+                <h5 class="mb-3">🛒 Order Items</h5>
+
+                <table class="table table-hover align-middle text-center">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Image</th>
+                            <th class="text-start">Product</th>
+                            <th>Price</th>
+                            <th>Qty</th>
+                            <th>Discount</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @foreach (var item in Model.Items)
+                        {
+                            <tr>
+                                <td>
+                                    <img src="@item.ImageUrl"
+                                         class="rounded"
+                                         style="width:60px; height:60px; object-fit:cover;" />
+                                </td>
+
+                                <td class="text-start fw-semibold">
+                                    @item.ProductName
+                                </td>
+
+                                <td>@item.UnitPrice.ToString("N0") ₫</td>
+                                <td>@item.Quantity</td>
+
+                                <td>
+                                    <span class="text-danger">
+                                        @item.Discount
+                                    </span>
+                                </td>
+
+                                <td class="fw-bold text-success">
+                                    @item.LineTotal.ToString("N0") ₫
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    }
+</div>
