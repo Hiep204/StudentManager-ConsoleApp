@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "StudentManager-ConsoleApp/1.0.0": {
+        "runtime": {
+          "StudentManager-ConsoleApp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "StudentManager-ConsoleApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

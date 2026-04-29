@@ -1,0 +1,14 @@
+C:\Users\admin\source\repos\StudentManager-ConsoleApp\bin\Debug\net8.0\StudentManager-ConsoleApp.exe
+C:\Users\admin\source\repos\StudentManager-ConsoleApp\bin\Debug\net8.0\StudentManager-ConsoleApp.deps.json
+C:\Users\admin\source\repos\StudentManager-ConsoleApp\bin\Debug\net8.0\StudentManager-ConsoleApp.runtimeconfig.json
+C:\Users\admin\source\repos\StudentManager-ConsoleApp\bin\Debug\net8.0\StudentManager-ConsoleApp.dll
+C:\Users\admin\source\repos\StudentManager-ConsoleApp\bin\Debug\net8.0\StudentManager-ConsoleApp.pdb
+C:\Users\admin\source\repos\StudentManager-ConsoleApp\obj\Debug\net8.0\StudentManager-ConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\StudentManager-ConsoleApp\obj\Debug\net8.0\StudentManager-ConsoleApp.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\StudentManager-ConsoleApp\obj\Debug\net8.0\StudentManager-ConsoleApp.AssemblyInfo.cs
+C:\Users\admin\source\repos\StudentManager-ConsoleApp\obj\Debug\net8.0\StudentManager-ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\StudentManager-ConsoleApp\obj\Debug\net8.0\StudentManager-ConsoleApp.dll
+C:\Users\admin\source\repos\StudentManager-ConsoleApp\obj\Debug\net8.0\refint\StudentManager-ConsoleApp.dll
+C:\Users\admin\source\repos\StudentManager-ConsoleApp\obj\Debug\net8.0\StudentManager-ConsoleApp.pdb
+C:\Users\admin\source\repos\StudentManager-ConsoleApp\obj\Debug\net8.0\StudentManager-ConsoleApp.genruntimeconfig.cache
+C:\Users\admin\source\repos\StudentManager-ConsoleApp\obj\Debug\net8.0\ref\StudentManager-ConsoleApp.dll
